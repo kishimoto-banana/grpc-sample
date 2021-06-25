@@ -9,7 +9,7 @@ import sample_pb2_grpc
 
 class HelloService(sample_pb2_grpc.HelloServiceServicer):
     def SayHello(self, request, context):
-        return sample_pb2.HelloReply(message=f"Hello {request.name}")
+        return sample_pb2.HelloReply(message=f"Hello {request.name} san")
 
 
 def serve():
